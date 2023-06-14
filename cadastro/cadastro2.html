@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"/>
+    <title>Cadastro Estabelecimento</title>
+</head>
+<body>
+    <div id="form">
+        <form action="">
+            <h1 class="title"> Cadastrar para Estabelecimento  </h1>
+            <label for=""> Nome Responsável </label>
+            <div class="input">
+                <input id="username" name="username" placeholder="Nome" type="text">
+            </div>
+
+            <label for=""> Nome Estabelecimento </label>
+            <div class="input">
+                <input id="username" name="username" placeholder="Nome do Estabelecimento" type="text">
+            </div>
+
+            <label for=""> E-mail </label>
+            <div class="input">
+                 <input id="email" email="email" placeholder="Email" type="email">
+            </div>
+
+            <label for=""> Telefone </label>
+                <div class="input">
+                    <input id="telefone" telefone="telefone" placeholder="Telefone" type="tel" maxlength="11">
+                </div>
+
+            <label for=""> Localização </label>
+            <div class="input">
+                 <input id="localização" localização="localização" placeholder="Localização" type="text">
+            </div>
+
+            <label for=""> N° vagas </label>
+            <div class="input">
+                 <input id="vagas" vagas="vagas" placeholder="Número" type="number">
+            </div>
+            <label for=""> Horário Funcionamento </label>
+                 <div class="horario-funcionamento">
+                    <label for="">Inicio</label>
+                    <div class="input-h">
+                         <input id="horario" localização="horario" placeholder="horario" type="time">
+                    </div>
+                    <label for="">Fim</label>
+                    <div class="input-h">   
+                        <input id="horario" localização="horario" placeholder="horario" type="time">
+                   </div>
+                 </div>
+
+            <p> Tipo de Estabelecimento: </p>
+            <input type="radio" name = "botao" id="Shopping" value="Shopping" required>
+            <label for="Shopping"> Shopping </label>
+            <input type="radio" name = "botao" id="Restaurante" value="Restaurante" required>
+            <label for="Restaurante"> Restaurante </label>
+            <input type="radio" name = "botao" id="Farmácia" value="Farmácia" required>
+            <label for="Farmácia"> Farmácia </label>
+            <input type="radio" name = "botao" id="Surpermercado" value="Surpermercado" required>
+            <label for="Surpermercado"> Surpermercado </label>
+            <input type="radio" name = "botao" id="Hospital" value="Hospital" required>
+            <label for="Hospital"> Hospital </label>
+            <input type="radio" name = "botao" id="Outro" value="Outro" required>
+            <label for="outro"> Outro </label>
+
+            <div id="btn">
+                <button type="submit"> Cadastrar</button>
+            </div>
+
+            <a href="cadastro.html">
+                <h4> Você é um Cliente? Cadastre-se aqui</h4>
+              </a>
+
+        </div>
+
+</form>
+</body>
+</html>
