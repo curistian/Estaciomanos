@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paginainicial.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+     <!-- Fontawesome CDN Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+     
+     
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/Estaciomanos.png" alt=""><span>estaciomanos.</span></a>
+
+        <ul class="navbar">
+            <li><a href="#" class="active">inicio</a></li>
+            <li><a href="#">Estacionamentos</a></li>
+            <li><a href="#">Planos</a></li>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="index.html">Contato</a></li>
+        </ul>
+        <div class="main">
+            <a href="cadastro/cadastro.html" class="user"><i class="ri-user-fill"></i>Cadastrar</a>
+            <a href="login/index.html">Entrar</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <script>
+            let menu = document.querySelector('#menu-icon');
+            let navbar = document.querySelector('.navbar');
+
+                menu.onclick = () => {
+                    menu.classList.toggle('bx-x');
+                    navbar.classList.toggle('open');
+                }
+        </script>
+    </header>
+    <main>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.6578763980547!2d-43.915250488210965!3d-19.896663337195942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a49a48c3c17%3A0x8e64338a5d64e022!2sSENAI%20Horto!5e0!3m2!1spt-BR!2sbr!4v1683136062999!5m2!1spt-BR!2sbr" width="1200" height=700" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="input-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Procurar estacionamentos" />
+                <button class="button">Pesquisar</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="titulo">
+        <h3>Estacionamentos próximos de você</h3>
+    </div>
+
+    <div class="xesque">
+        <section>
+            <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipOBMCwvkiWViBv7ulYh4xrVLLVycQXE6cCShqXp=s680-w680-h510" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">Miranda estacionamento</span>
+                    <span class="profession">parcialmente coberto, bicicletário</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                    <button class="aboutMe">Reservar</button>
+                    <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://autopark.com.br/wp-content/uploads/2019/12/imagem-destaque.png" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">MegaStopCar</span>
+                    <span class="profession">coberto, bicicletário, subsolo</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                    <button class="aboutMe">Reservar</button>
+                    <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://lh3.googleusercontent.com/proxy/pcD7HTzQmXopu0Z4QMntU1ME_YIh9JAM8e8SqyLyTXn9peatBfnKghICqKfsNuzPNXg_i-F09VlJUu5ZvL4gCyfbx8c23wLGG-N7uPMl-KCEpR6CIcnvOFE_-InSguzJtgQW11juvJBisK2BLaBOQzLEOyEiqFv24h61DQ=s680-w680-h510" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">juras parkcar </span>
+                    <span class="profession">coberto</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                        <button class="aboutMe">Reservar</button>
+                        <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://soubh.uai.com.br/uploads/post/image/9912/main_estacionamento.jpg" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">day&night parkcar</span>
+                    <span class="profession">coberto, subsolo, TAG</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                        <button class="aboutMe">Reservar</button>
+                        <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipONpwwLxh0uLQNP9ohVN10Yb7XyrN-S8kgdzYYa=w768-h768-n-o-v1" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">decisão park</span>
+                    <span class="profession">coberto</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                        <button class="aboutMe">Reservar</button>
+                        <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://autopark.com.br/wp-content/uploads/2018/09/img-home.jpg" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">autopark midia</span>
+                    <span class="profession">coberto, TAG, bicicletário</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                        <button class="aboutMe">Reservar</button>
+                        <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMGOXbKadU2ogf0CFauOXsMCOj6vC6mNOo6eioj=s680-w680-h510" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">Agnel estacionamento</span>
+                    <span class="profession">coberto, bicicletário</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                        <button class="aboutMe">Reservar</button>
+                        <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://lh3.googleusercontent.com/proxy/RlmX2Zged0nRuzS593g2gYqwQbYgFgLCakJzEVK2FIxdfx6JrQsWc0lZVyiHWf2ZXPEwAHwNxAnwB6_1fhDEbw-lbQ2v_zkscV7aW-3Y4jHr_6uXFJH-SVh-2f-oU3CVkn-VhK_zb7dQYqxxG7-l33IZYro4AZBlbxQ-Rw=s680-w680-h510" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">Minas Park</span>
+                    <span class="profession">Coberto, bicicletário</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                        <button class="aboutMe">Reservar</button>
+                        <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide card">
+                <div class="card-content">
+                    <div class="image">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipOs_hocguFCDssyIGpfrH529bIX8K6jOAaxink9=s680-w680-h510" alt="">
+                    </div>
+
+                    <div class="name-profession">
+                    <span class="name">Léo estacionamento</span>
+                    <span class="profession">parcialmente coberto</span>
+                    </div>
+
+                    <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="button">
+                        <button class="aboutMe">Reservar</button>
+                        <button class="hireMe">Ver mais</button>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </div>
+
+    <div class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol viewBox="0 0 24 24" id="expand-more">
+            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="close">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+            </symbol>
+        </svg>
+        </div>
+
+        <details open>
+        <summary>
+            Como funciona o Estaciomanos?
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>A Estaciomanos funciona através de parcerias feitas com diversos estacionamentos locais, que nos permitem compartilhar suas informações aqui, para que então possamos conectar você, que procura por uma vaguinha, a este estacionamento da maneira mais rápida e prática possível.</p>
+        </details>
+
+        <details>
+
+        <summary>
+            Quais são as formas de pagamento aceitas?
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>A Estaciomanos aceita qualquer tipo de pagamento, pix, cartão de crédito, débito e até mesmo utilizando crédito pré-pago da play-store!</p>
+        </details>
+
+        <details>
+        <summary>
+            Como posso cancelar uma reserva?  
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>Entrando na página de Reservas, acessando pela barra de navegação da Estaciomanos, você pode acessar suas reservas feitas e então cancelar e ter seu dinheiro estornado!</p>
+        </details>
+    </div>
+
+    <footer class="sticky-footer">
+        <!-- <h2>Footer Stick to the Bottom</h2> -->
+        <ul>
+            <li><a href="#">Encontre o estacionamento ideal para você, de forma fácil e rápida, com o aplicativo Estaciomanos. Reservar sua vaga nunca foi tão simples!</a></li>
+            
+        </ul>
+        <p> © Copyright manos inc 2023.</p>
+    </footer>    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="./sliderrr.js"></script>
+  
+</body>
+</html>
