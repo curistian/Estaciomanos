@@ -244,13 +244,13 @@ main{
   }
 
   .xesque{
-    height: 70vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #cdf0ff;
     padding: 50px 50px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
 
   section{
@@ -259,6 +259,7 @@ main{
     width: 1075px;
     display: flex;
     align-items: center;
+    
   }
   
   .swiper{
@@ -270,7 +271,7 @@ main{
     background: #fff;
     border-radius: 20px;
     height: 400px;
-    margin: 20px 0;
+    margin: 0px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -411,6 +412,8 @@ main{
     text-align: center;
     font-size: 2.4rem;
     padding-top: 40px;
+    padding-bottom: -1000px;
+    margin: 0;
     text-shadow: 1px 1px 1px #000000;
 }
 
